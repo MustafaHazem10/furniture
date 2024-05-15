@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+.main {
+    width: 100%;
+    height: 100vh;
+    background-image: url("/images/pexels-rachel-claire-8112712.jpg");
+    background-size: cover;
+    background-position:center ;
+}
+.navbar {
+    width: 85%;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.Logo {
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+span {
+    color: saddlebrown;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.navbar ul li::before{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background-color: saddlebrown;
+    position: absolute;
+    left: 0;
+    top: 20px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::before{
+    width: 100%;
+}
+.content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+}
+.content h1{
+    color: white;
+    margin-top: 80px;
+    font-weight: bold;
+    font-size: 70px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    color: white;
+}
+button {
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color:saddlebrown;
+    color: white;
+    margin: 0 10px;
+    transition: 0.5s;
+    text-align: center;
+    cursor: pointer;
+}
+button:hover {
+    background-color: white;
+    color: saddlebrown;
+}
